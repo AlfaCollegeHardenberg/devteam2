@@ -63,6 +63,14 @@ module.exports = [
         "clobbers": [
             "device"
         ]
+    },
+    {
+        "file": "plugins/com.phonegap.plugins.bluetooth/www/bluetooth.js",
+        "id": "com.phonegap.plugins.bluetooth.bluetooth",
+        "pluginId": "com.phonegap.plugins.bluetooth",
+        "clobbers": [
+            "bluetooth"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -71,7 +79,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.0",
     "com.unarin.cordova.beacon": "3.3.0",
     "cordova-plugin-device": "1.1.0",
-    "cordova-plugin-console": "1.0.2"
+    "cordova-plugin-console": "1.0.2",
+    "com.phonegap.plugins.bluetooth": "0.9"
 }
 // BOTTOM OF METADATA
 });

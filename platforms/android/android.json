@@ -19,6 +19,10 @@
                         {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Bluetooth\"><param name=\"android-package\" value=\"org.apache.cordova.bluetooth.BluetoothPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -28,14 +32,18 @@
                     "/manifest": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
-                            "count": 1
+                            "count": 2
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
-                            "count": 1
+                            "count": 2
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
                             "count": 1
                         }
                     ],
@@ -68,6 +76,9 @@
             "PACKAGE_NAME": "com.dominique.workshop"
         },
         "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.dominique.workshop"
+        },
+        "com.phonegap.plugins.bluetooth": {
             "PACKAGE_NAME": "com.dominique.workshop"
         }
     },
@@ -136,12 +147,21 @@
             "clobbers": [
                 "device"
             ]
+        },
+        {
+            "file": "plugins/com.phonegap.plugins.bluetooth/www/bluetooth.js",
+            "id": "com.phonegap.plugins.bluetooth.bluetooth",
+            "pluginId": "com.phonegap.plugins.bluetooth",
+            "clobbers": [
+                "bluetooth"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.2.0",
         "com.unarin.cordova.beacon": "3.3.0",
         "cordova-plugin-device": "1.1.0",
-        "cordova-plugin-console": "1.0.2"
+        "cordova-plugin-console": "1.0.2",
+        "com.phonegap.plugins.bluetooth": "0.9"
     }
 }

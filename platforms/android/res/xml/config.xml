@@ -11,6 +11,9 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
+    <feature name="Bluetooth">
+        <param name="android-package" value="org.apache.cordova.bluetooth.BluetoothPlugin" />
+    </feature>
     <allow-intent href="market:*" />
     <name>Beacon</name>
     <description>

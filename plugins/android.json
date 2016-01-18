@@ -18,6 +18,9 @@
         },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.dominique.workshop"
+        },
+        "com.phonegap.plugins.bluetooth": {
+            "PACKAGE_NAME": "com.dominique.workshop"
         }
     },
     "dependent_plugins": {}
